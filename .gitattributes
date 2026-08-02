@@ -1,0 +1,15 @@
+# Exclude frontend/template assets from GitHub language statistics.
+# These are presentation-layer files; the substance of this repo is Python.
+
+*.html linguist-vendored
+*.css  linguist-vendored
+*.js   linguist-vendored
+
+# Common template/static directories (safe to keep even if absent)
+templates/**  linguist-vendored
+static/**     linguist-vendored
+assets/**     linguist-vendored
+
+# Generated reports and build output, if any
+*.min.js  linguist-generated
+*.min.css linguist-generated
